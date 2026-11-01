@@ -9,21 +9,21 @@ public class App {
                 39,
                 1.75,
                 68.9,
-                "Leve",
                 11,
                 2,
                 1
-                );
+
+        );
         Lutador l1 = new Lutador(
                 "Putscript",
                 "Brasil",
                 29,
                 1.68,
                 57.8,
-                "leve",
                 14,
                 2,
                 3
+
         );
         Lutador l2 = new Lutador(
                 "Dead Code",
@@ -31,10 +31,10 @@ public class App {
                 28,
                 1.93,
                 81.6,
-                "Médio",
                 13,
                 0,
                 2
+
         );
         Lutador l3 = new Lutador(
                 "Ufocobol",
@@ -42,10 +42,10 @@ public class App {
                 37,
                 1.70,
                 119.3,
-                "Pesado",
                 5,
                 4,
                 3
+
         );
         Lutador l4 = new Lutador(
                 "Nerdard",
@@ -53,11 +53,9 @@ public class App {
                 30,
                 1.81,
                 105.7,
-                "Pesado",
                 12,
                 2,
                 4
-
         );
 
 

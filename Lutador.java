@@ -8,7 +8,7 @@ public class Lutador {
             int idade,
             double altura,
             double peso,
-            String categoria,
+
             int vitorias,
             int derrotas,
             int empates
@@ -17,7 +17,7 @@ public class Lutador {
         setNacionalidade(nacionalidade);
         setIdade(idade);
         setAltura(altura);
-
+        setPeso(peso);
 
         setVitorias(vitorias);
         setDerrotas(derrotas);
@@ -100,6 +100,7 @@ public class Lutador {
 
     public void setPeso(double peso) {
         this.peso = peso;
+        setCategoria(peso);
 
     }
 
@@ -107,8 +108,22 @@ public class Lutador {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setCategoria(double peso) {
+        if(peso < 52.2 || peso > 120.2){
+            System.out.println("Peso inválido! Tente novamente!");
+        }
+        else{
+            if(peso <= 70.3){
+                this.categoria = "Leve";
+            }
+            else if(peso <= 83.9){
+                this.categoria = "Médio";
+
+            }
+            else{
+                this.categoria = "Pesado";
+            }
+        }
     }
 
     public int getVitorias() {

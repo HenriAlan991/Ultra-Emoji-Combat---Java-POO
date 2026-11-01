@@ -1,14 +1,13 @@
 package aula7a;
 
 public class Lutador {
-
+    // MÉTODO CONSTRUTOR
     public Lutador(
             String nome,
             String nacionalidade,
             int idade,
             double altura,
             double peso,
-
             int vitorias,
             int derrotas,
             int empates
@@ -18,11 +17,12 @@ public class Lutador {
         setIdade(idade);
         setAltura(altura);
         setPeso(peso);
-
         setVitorias(vitorias);
         setDerrotas(derrotas);
         setEmpates(empates);
     }
+    
+    // ATRIBUTOS
     private String nome;
     private String nacionalidade;
     private int idade;
@@ -33,6 +33,8 @@ public class Lutador {
     private int derrotas;
     private int empates;
 
+    
+    // MÉTODOS
     public void apresentar(){
         System.out.println("LUTADOR: " + getNome());
         System.out.println("NACIONALIDADE: " + getNacionalidade());
@@ -43,6 +45,8 @@ public class Lutador {
         System.out.println("VITÓRIAS: " + getVitorias());
         System.out.println("DERROTAS: " + getDerrotas());
         System.out.println("EMPATES: " + getEmpates());
+        espaco();
+        
 
     }
     public void status(){
@@ -51,6 +55,7 @@ public class Lutador {
         System.out.println("VITÓRIAS: " + getVitorias());
         System.out.println("DERROTAS: " + getDerrotas());
         System.out.println("EMPATES: " + getEmpates());
+        espaco();
 
     }
     public void ganharLuta(){
@@ -63,6 +68,8 @@ public class Lutador {
         setEmpates(getEmpates() + 1);
     }
 
+    
+    // MÉTODOS ESPECIAIS
     public String getNome() {
         return nome;
     }
@@ -150,6 +157,13 @@ public class Lutador {
     public void setEmpates(int empates) {
         this.empates = empates;
     }
-
+    
+    
+    // MÉTODOS PRIVADOS INTERNOS
+    private void espaco(){
+        System.out.println("_________________");
+        
+    }
+    
 
 }

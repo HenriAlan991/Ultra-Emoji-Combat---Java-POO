@@ -36,6 +36,7 @@ public class Lutador {
     public void apresentar(){
         System.out.println("LUTADOR: " + getNome());
         System.out.println("NACIONALIDADE: " + getNacionalidade());
+        System.out.println("IDADE: " + getIdade());
         System.out.println("ALTURA: " + getAltura());
         System.out.println("PESO: " + getPeso());
         System.out.println("CATEGORIA: " + getCategoria());

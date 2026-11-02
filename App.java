@@ -58,16 +58,16 @@ public class App {
                 4
         );
 
-    l0.apresentar();
-    l1.apresentar();
-    l2.apresentar();
-    l3.apresentar();
 
-    l4.ganharLuta();
-    l4.ganharLuta();
-    l4.ganharLuta();
-    
-    l4.apresentar();
+        Luta luta = new Luta();
+
+
+        luta.marcarLuta(l0, l1);
+        luta.marcarLuta(l3,l4);
+
+
+
+
 
 
 

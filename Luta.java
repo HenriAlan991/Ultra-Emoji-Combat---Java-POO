@@ -5,7 +5,7 @@ public class Luta {
     // ------ ATRIBUTOS -------
     private Lutador desafiado;
     private Lutador desafiante;
-    private int rounds;
+    
     private boolean aprovada;
 
     // MÉTODOS PÚBLICOS

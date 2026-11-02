@@ -12,14 +12,15 @@ public class Luta {
     public void marcarLuta(Lutador l1, Lutador l2){
         if(verificarLuta(l1,l2)){
             System.out.println("--- LUTA MARCADA ---");
-            espaco();
+            l1.espaco();
             System.out.println("LUTADOR 1");
-            espaco();
+            l1.espaco();
             l1.status();
-            espaco();
+            l1.espaco();
             System.out.println("LUTADOR 2");
             l2.status();
-            
+            l1.espaco();
+
         }
         else{
             System.out.println("Não foi possivel marcar está luta!");
@@ -47,6 +48,11 @@ public class Luta {
         }
 
 
+    }
+
+    private int randomNumber(int min, int max){
+        int result = (int) (Math.random() * (max - min + 1) + min);
+        return result;
     }
 
     // MÉTODOS ESPECIAIS
@@ -81,8 +87,5 @@ public class Luta {
     public void setAprovada(boolean aprovada) {
         this.aprovada = aprovada;
     }
-    public void espaco(){
-        System.out.println("_________________");
 
-    }
 }
